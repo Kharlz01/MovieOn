@@ -1,0 +1,21 @@
+<view class="container">
+  <!-- <view class="header">
+      <text class="title">MovieOn</text>
+  </view> -->
+
+  <header></header>
+
+  <view class="semi-header">
+    <input class="search-bar" placeholder="Buscar pelicula..." onInput="onInputChange" onConfirm="onEnterPress"/>
+  </view>
+
+  <view class="contend" a:if="{{ results == !{} }}">
+    <page></page>
+  </view>
+
+  <view class="contend" a:else>
+    <preview myResult={{results}} myCurrentPage={{currentPage}} myPages={{pages}} myKeyword={{keyword}} 
+    onShow="showDetails" onQuery="onEnterPress"></preview>
+  </view>
+
+</view>

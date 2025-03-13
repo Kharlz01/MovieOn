@@ -1,0 +1,13 @@
+<view class="container">
+
+  <header></header>
+
+  <view a:if="{{ !opinion }}">
+    <details myInfoMovie={{infoMovie}} myLike={{like}} myGenres={{genres}} onMyLike="myLike" onMyOpinion="opinionCard"></details>
+  </view>
+
+  <view a:else>
+    <opinion myInfoMovie={{infoMovie}} myFlag={{flag}} onBack="opinionCard" onSave="saveLocal"></opinion>
+  </view>
+
+</view>

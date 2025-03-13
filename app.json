@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/details/details",
+    "pages/bookmarks/bookmarks"
+  ],
+  "window": {
+    "defaultTitle": "MovieOn",
+    "titleBarColor": "#222"
+  }
+}

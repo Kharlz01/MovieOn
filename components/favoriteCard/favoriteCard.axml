@@ -1,0 +1,24 @@
+<view class="movie-list" a:if="{{ !ref }}">
+  <view a:if="{{ myFavoriteMovies == 0 }}" class="movie-item">
+    <text class="empty-title">Al parecer aun no hay peliculas aqui... Agrega una nueva.</text>
+  </view>
+  <view class="movie-item" a:for="{{ myFavoriteMovies }}" a:key="index">
+    <text class="movie-title">{{item.title}}</text>
+    <view>
+      <image class="option-icon" onTap="preDelete" data-value={{index}} src="/images/delete.png" />
+      <image class="option-icon" onTap="goToDetails" data-value={{index}} src="/images/next.png"/>
+    </view>
+  </view>
+</view>
+
+<view a:else class="warning">
+  <view class="modal-content">
+    <view class="text-modal">
+      <text>¿Realmente deseas eliminar "{{movieTitle}}" de tu lista de favoritos?</text>
+    </view>
+    <view class="options">
+      <image mode="scaleToFill" class="backButton" onTap="omitDelete" src="/images/previous.png" />
+      <image mode="scaleToFill" class="deleteButton" onTap="deleteLike" src="/images/delete2.png" />
+    </view>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+<view class="container">
+  <view>
+    <header></header>
+  </view>
+  <view class="header">
+    <text class="subtitle">MIS FAVORITOS</text>
+  </view>
+  <like-card myFavoriteMovies={{favoriteMovies}}></like-card>
+</view>

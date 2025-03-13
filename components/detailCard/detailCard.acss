@@ -1,0 +1,73 @@
+.content {
+  background:#383838;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.poster {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.poster image{
+  border-radius: 10px;
+  box-shadow: 10px 5px 2px #0d0d0d;
+}
+
+.movie-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.description {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.info {
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.info view{
+  margin: 5px 0;
+}
+
+.info view text{
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.enroll-button {
+  background-color: #ffeb3b;
+  color: #000;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.like-button {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.option-icon{
+  width: 25px;
+  height: 25px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20px;
+}

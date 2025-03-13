@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "header": "/components/navbar/navbar",
+    "like-card": "/components/favoriteCard/favoriteCard"
+  },
+  "styleIsolation": "apply-shared"
+}

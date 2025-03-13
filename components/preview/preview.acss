@@ -1,0 +1,58 @@
+.movie-list {
+  margin-bottom: 20px;
+}
+
+.movie-item {
+  background-color: #404040;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 10px 5px 1px #0d0d0d;
+}
+
+.poster {
+  width: 100px;
+  height: 70px;
+  background-color: #666;
+  /* margin-right: 15px; */
+}
+
+.movie-title {
+  color: white;
+  flex-grow: 1;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 50%;
+}
+
+.movie-link {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+}
+
+
+.movie-link:hover {
+  border: 1px solid white;
+  border-radius: 30%;
+}
+
+.pagination {
+  margin-bottom: 40px;
+  padding: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.currentPage {
+  color: #00d4ff;
+  font-weight: bold;
+  border: 1px solid #00d4ff;
+  border-radius: 50%;
+  padding: 4px;
+}

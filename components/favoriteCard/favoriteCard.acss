@@ -1,0 +1,82 @@
+.movie-list {
+  padding: 20px;
+}
+
+.movie-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #424242;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.movie-title {
+  color: white;
+  flex-grow: 1;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 65%;
+  font-size: 17px;
+}
+
+.empty-title {
+  color: white;
+  font-size: 17px;
+}
+
+.option-icon {
+  width: 25px;
+  height: 25px;
+  margin: 0 5px;
+}
+
+/* Aqui comienza el modal de eliminado */
+
+.warning {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  width: 100%;
+}
+
+.modal-content {
+  background-color: #4d7792;
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.text-modal {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.options {
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.backButton {
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+}
+
+.deleteButton {
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+}

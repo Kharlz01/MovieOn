@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "details": "/components/detailCard/detailCard",
+    "header": "/components/navbar/navbar",
+    "opinion": "/components/opinionCard/opinionCard"
+  },
+  "styleIsolation": "apply-shared"
+}

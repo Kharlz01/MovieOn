@@ -1,0 +1,47 @@
+<view class="content">
+
+  <view a:if="{{ !myFlag }}" >
+    <view class="rating-section">
+      <view class="rating-title">
+        <text>Valoración:</text>
+      </view>
+      <view class="rating-description">
+        <text class="text-adjust">Asigna una nueva valoración a esta película seleccionada:</text>
+      </view>
+      <view class="form-rate">
+        <radio-group class="stars" onChange="radioChange">
+          <label><radio value="1"/>⭐️</label>
+          <label><radio value="2"/>⭐️</label>
+          <label><radio value="3"/>⭐️</label>
+          <label><radio value="4"/>⭐️</label>
+          <label><radio value="5"/>⭐️</label>
+          <label><radio value="6"/>⭐️</label>
+          <label><radio value="7"/>⭐️</label>
+          <label><radio value="8"/>⭐️</label>
+          <label><radio value="9" />⭐️</label>
+          <label><radio value="10"/>⭐️</label>
+        </radio-group>
+      </view>
+    </view>
+  </view>
+
+  <view a:else >
+    <view class="comments-section">
+      <view class="comments-title">
+        <text>Comentarios</text>
+      </view>
+      <view class="comments-description">
+        <text class="text-adjust">Crea o edita un comentario que tengas al respecto de esta pelicula: </text>
+      </view>
+      <view class="comments-input">
+        <input class="input-box" onInput="commentChange" placeholder="Escribe aquí tu comentario..."/>
+      </view>
+    </view>
+  </view>
+
+  <view class="buttons">
+    <image class="back-button" mode="scaleToFill" onTap="infoBack" src="/images/back.png" />
+    <image class="save-button" mode="scaleToFill" onTap="infoSave" src="/images/save.png" />
+  </view>
+
+</view>

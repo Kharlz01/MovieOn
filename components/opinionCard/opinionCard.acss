@@ -1,0 +1,74 @@
+.content {
+  background:#383838;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px;
+}
+
+.rating-section, .comments-section {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.rating-title, .comments-title {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.rating-description, .comments-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.form-rate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-adjust {
+  text-align: center;
+}
+
+.stars {
+  margin: 10px;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.back-button, .save-button {
+  background: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.comments-input {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-box {
+  width: 90%;
+  border-radius: 5px;
+  border: none;
+  padding: 8px;
+}

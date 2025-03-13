@@ -1,0 +1,23 @@
+<view class="movie-list" a:for="{{ myResult }}" a:key="index">
+  <view class="movie-item">
+    <image class="poster" a:if="{{ item.backdrop_path == null }}" mode="scaleToFill" src="/images/movie.png" />
+    <image class="poster" a:else mode="scaleToFill" src={{`https://image.tmdb.org/t/p/w500${item.backdrop_path}`}} />
+    <text class="movie-title">{{item.title}}</text>
+    <image class="movie-link" mode="scaleToFill" data-value={{index}} onTap="showDetails" src="/images/next.png"/>
+  </view>
+</view>
+
+<view class="pagination">
+  <view>
+    <text a:if="{{ myCurrentPage <= 4 }}"></text>
+    <text a:else onTap="newQuery" data-value={{myCurrentPage-4}}>←</text>
+  </view>
+  <view a:for="{{ visiblePages }}" a:key="index">
+    <text a:if="{{ item == myCurrentPage }}" class="currentPage">{{item}}</text>
+    <text a:else onTap="newQuery" data-value={{item}}>{{item}}</text>
+  </view>
+  <view>
+    <text a:if="{{ myCurrentPage > myPages-4 }}"></text>
+    <text a:else onTap="newQuery" data-value={{myCurrentPage+4}}>→</text>
+  </view>
+</view>

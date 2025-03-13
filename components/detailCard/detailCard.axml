@@ -1,0 +1,48 @@
+<view class="content">
+  <view class="poster">
+    <image a:if="{{ myInfoMovie.poster_path == null }}" mode="scaleToFill" src="/images/movie.png" />
+    <image a:else mode="scaleToFill" src={{`https://image.tmdb.org/t/p/w500${myInfoMovie.poster_path}`}} />
+  </view>
+  <view class="movie-title">
+    <text>{{myInfoMovie.title}}</text>
+  </view>
+  <view class="description">
+    <text>{{myInfoMovie.overview}}</text>
+  </view>
+  <view class="info">
+    <view>
+      <text>Valoración</text>: ⭐{{myInfoMovie.vote_average}}
+    </view>
+    <view>
+      <text>Género</text>: {{myGenres}}
+    </view>
+    <view>
+      <text>Fecha de lanzamiento</text>: {{myInfoMovie.release_date}}
+    </view>
+    <view>
+      <text>Popularidad</text>: {{myInfoMovie.popularity}}
+    </view>
+    <view>
+      <text>Votos</text>: {{myInfoMovie.vote_count}}
+    </view>
+    <view>
+      <text>Titulo original</text>: {{myInfoMovie.original_title}}
+    </view>
+  </view>
+
+  <!-- <view class="like-button">
+    <image a:if="{{ myLike }}" src="../../images/heartfull.png" onTap="myLike"></image>
+    <image a:else src="../../images/heart.png" onTap="myLike"></image>
+  </view> -->
+
+  <view class="buttons" a:if="{{ myLike }}" >
+    <image class="option-icon" src="../../images/rate.png" onTap="myOpinion" data-value={{false}}></image>
+    <image class="option-icon" src="../../images/heartfull.png" onTap="myLike"></image>
+    <image class="option-icon" src="../../images/comment.png" onTap="myOpinion" data-value={{true}}></image>
+  </view>
+
+  <view class="like-button" a:else> 
+    <image class="option-icon" src="../../images/heart.png" onTap="myLike"></image>
+  </view>
+
+</view>

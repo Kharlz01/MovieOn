@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "preview": "/components/preview/preview",
+    "header": "/components/navbar/navbar",
+    "page": "/components/mainPage/mainPage"
+  }
+}

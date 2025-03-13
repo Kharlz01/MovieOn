@@ -1,0 +1,84 @@
+.container {
+  background-color: #222;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(to right, blue, purple);
+  font-size: 24px;
+  color: white;
+  width: 94%;
+  padding: 10px;
+}
+
+.title {
+  font-size: 24px;
+  color: #fff;
+}
+
+.content {
+  background: #7b1fa2;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.poster {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.poster image{
+  border-radius: 10px;
+}
+
+.movie-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.description {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.info {
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.info view{
+  margin: 5px 0;
+}
+
+.enroll-button {
+  background-color: #ffeb3b;
+  color: #000;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.like-button {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.like-button image{
+  width: 24px;
+  height: 24px;
+}

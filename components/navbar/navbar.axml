@@ -1,0 +1,5 @@
+<view class="header">
+  <image mode="scaleToFill" src="/images/home.png" onTap="goToHome"/>
+  <text class="title">MovieOn</text>
+  <image mode="scaleToFill" src="/images/bookmark.png" onTap="goToBookmarks"/>
+</view>

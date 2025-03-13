@@ -1,0 +1,10 @@
+<view class="welcome">
+  <text class="welcome-title">Bienvenido a MovieOn</text>
+  <text class="subtitle">Tu consultor de películas</text>
+  <text class="description">
+    Para empezar escribe la película que deseas consultar en el buscador
+  </text>
+  <text class="description">
+    O si lo deseas puedes revisar tus películas favoritas en el icono de la parte superior derecha.
+  </text>
+</view>

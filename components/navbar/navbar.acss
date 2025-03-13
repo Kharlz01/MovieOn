@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  /* margin-bottom: 20px; */
+  background: linear-gradient(to right, #212d3e, #4d7792);
+  font-size: 24px;
+  color: white;
+  width: 94%;
+  padding: 10px;
+}
+
+.header image {
+  width: 22px;
+  height: 22px;
+  margin: 0 5px;
+}
