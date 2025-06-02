@@ -9,12 +9,14 @@
   <view class="description">
     <text>{{myInfoMovie.overview}}</text>
   </view>
+  <view class="genres-card" a:for="{{ myGenres }}" a:key="index">
+    <view class="genre">
+      {{item}}
+    </view>
+  </view>
   <view class="info">
     <view>
       <text>Valoración</text>: ⭐{{myInfoMovie.vote_average}}
-    </view>
-    <view>
-      <text>Género</text>: {{myGenres}}
     </view>
     <view>
       <text>Fecha de lanzamiento</text>: {{myInfoMovie.release_date}}
@@ -28,20 +30,34 @@
     <view>
       <text>Titulo original</text>: {{myInfoMovie.original_title}}
     </view>
+    <view a:if="{{ myLocal.myRate }}">
+      <text class="my-rate">Mi valoracion:</text>: ⭐{{myLocal.myRate}}
+    </view>
+    <view a:if="{{ myLocal.comment }}">
+      <text class="my-rate">Comentario:</text>: {{myLocal.comment }}
+    </view>
   </view>
 
-  <!-- <view class="like-button">
-    <image a:if="{{ myLike }}" src="../../images/heartfull.png" onTap="myLike"></image>
-    <image a:else src="../../images/heart.png" onTap="myLike"></image>
-  </view> -->
-
-  <view class="buttons" a:if="{{ myLike }}" >
-    <image class="option-icon" src="../../images/rate.png" onTap="myOpinion" data-value={{false}}></image>
-    <image class="option-icon" src="../../images/heartfull.png" onTap="myLike"></image>
-    <image class="option-icon" src="../../images/comment.png" onTap="myOpinion" data-value={{true}}></image>
+  <view a:if="{{ myLike }}" class="buttons">
+    <image
+      class="option-icon"
+      src="../../images/rate.png"
+      onTap="myOpinion"
+      data-value={{false}}
+    >
+    </image>
+    <image class="option-icon" src="../../images/heartfull.png" onTap="myLike">
+    </image>
+    <image
+      class="option-icon"
+      src="../../images/comment.png"
+      onTap="myOpinion"
+      data-value={{true}}
+    >
+    </image>
   </view>
 
-  <view class="like-button" a:else> 
+  <view a:else class="like-button">
     <image class="option-icon" src="../../images/heart.png" onTap="myLike"></image>
   </view>
 

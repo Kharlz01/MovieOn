@@ -16,6 +16,10 @@ Component({
       type: Object,
       value: {}
     },
+    myLocal: {
+      type: Object,
+      value: {}
+    },
   },
   mixins: [],
   data: {

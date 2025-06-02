@@ -30,6 +30,18 @@
   font-size: 15px;
 }
 
+.genres-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.genre {
+  background-color: #222;
+  padding: 5px;
+  border-radius: 10%;
+}
+
 .info {
   margin: 15px 0;
   font-size: 14px;
@@ -70,4 +82,8 @@ justify-content: center;
   align-items: center;
   justify-content: space-between;
   margin: 0 20px;
+}
+
+.my-rate {
+  color: #ffeb3b;
 }

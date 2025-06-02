@@ -59,6 +59,26 @@ function isLiked(e) {
 }
 
 /**
+ * Verifica si una pelicula seleccionada cuenta con informacion dada por el usuario en local.
+ *
+ * @function isLocalData
+ * @param {string|number} e - El identificador único del elemento a verificar.
+ * @returns {Array} La lista de informacion almacenada en el local storage respectiva de la pelicula.
+ * @example
+ * const liked = isLocalData(123); // Verifica si el elemento con ID 123 tiene datos asociados en local y los retorna.
+ */
+
+function isLocalData (e) {
+  const options = ownList();
+  const index = options.findIndex(item => item.id === e);
+  if (index > 0) {
+    return null
+  } else {
+    return options[index];
+  }
+}
+
+/**
  * Agrega o elimina comentarios o valoraciones de la lista de favoritos almacenada en el local storage.
  *
  * @function changeLocal
@@ -117,6 +137,7 @@ function ownList () {
 module.exports = {
   setLike,
   isLiked,
+  isLocalData,
   changeLocal,
   likeList,
   ownList

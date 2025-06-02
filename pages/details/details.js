@@ -1,6 +1,7 @@
 const {
   isLiked,
   changeLocal,
+  isLocalData,
 } = require('../../modules/likes');
 
 const {
@@ -43,7 +44,8 @@ Page({
     this.setData({
       like: isLiked(currentData.id),
       infoMovie: currentData,
-      genres: changeGenre(currentData.genre_ids)
+      genres: changeGenre(currentData.genre_ids),
+      infoLocal: isLocalData(currentData.id),
     })
   },
 });
