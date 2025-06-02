@@ -53,7 +53,6 @@
 
 ```
 const API_KEY = 'tu_api_key_aquí';
-
 ```
 
 4. **Ejecuta el proyecto:**
@@ -64,6 +63,7 @@ const API_KEY = 'tu_api_key_aquí';
 
 ## Estructura del proyecto 📂
 
+```
 movieon/
 ├── pages/
 │   ├── index/          # Página principal (búsqueda)
@@ -78,3 +78,26 @@ movieon/
 ├── app.json            # Configuración de la aplicación
 ├── app.acss            # Estilos globales
 └── README.md           # Documentación base del proyecto
+```
+
+## Contribuir 🤝
+
+¡Las contribuciones son bienvenidas! Si deseas mejorar el proyecto, sigue estos pasos:
+
+1. Haz un fork del repositorio.
+
+2. Crea una rama para tu feature o corrección:
+```
+git checkout -b nombre-de-tu-rama
+```
+3. Realiza tus cambios y haz commit:
+```
+git commit -m "Descripción de tus cambios"
+```
+4. Envía un pull request a la rama main.
+
+## Licencia 📜
+
+Este proyecto está bajo la licencia MIT.
+
+¡Gracias por usar MovieOn! 🎥🍿
