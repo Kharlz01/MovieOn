@@ -28,7 +28,7 @@
 
 | Búsqueda de películas       | Detalles de película        | Lista de favoritos         |
 |-----------------------------|-----------------------------|----------------------------|
-| ![Buscar](images/SS/search.png) | ![Detalles](images/SS/details.png) | ![Favoritos](images/SS/favorites.png) |
+| ![Buscar](images/SS/search.JPG) | ![Detalles](images/SS/details.PNG) | ![Favoritos](images/SS/favorites.PNG) |
 
 ---
 
