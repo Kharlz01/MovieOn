@@ -35,5 +35,46 @@
 ## Cómo usar 🚀
 
 1. **Clona el repositorio**:
-   ```bash
+   ```
    git clone https://github.com/Kharlz01/MovieOn.git
+   ```
+
+2. **Abre el proyecto en Mini Program Studio:**
+
+  - Abre Mini Program Studio y selecciona "Abrir proyecto".
+
+  - Navega hasta la carpeta del proyecto y selecciónala.
+
+3. **Configura la API de TMDb:**
+
+  - Obtén una API key de TMDb.
+
+  - Reemplaza la clave en el archivo de configuración (config.js):
+
+```
+const API_KEY = 'tu_api_key_aquí';
+
+```
+
+4. **Ejecuta el proyecto:**
+
+  - Compila y ejecuta el proyecto en Mini Program Studio.
+
+  - Escanea el código QR con la app de WeChat para probarlo en tu dispositivo móvil.
+
+## Estructura del proyecto 📂
+
+movieon/
+├── pages/
+│   ├── index/          # Página principal (búsqueda)
+│   ├── details/        # Página de detalles de película
+│   ├── bookmarks/      # Página de lista de favoritos
+├── components/         # Componentes reutilizables
+├── utils/              # Utilidades y funciones comunes
+├── images/             # Iconos utilizados por la aplicación
+├── out/                # Directorio de la documentación con Jsdoc
+├── test/               # Directorio de las pruebas unitarias (jest)
+├── app.js              # Configuración global
+├── app.json            # Configuración de la aplicación
+├── app.acss            # Estilos globales
+└── README.md           # Documentación base del proyecto
